@@ -1,25 +1,17 @@
 <template>
-  <div>登陆页</div>
-  <el-button @click="goHome">回首页</el-button>
+  <div class="welcome">
+    <h1>欢迎来到主界面</h1>
+    <router-link to="/login">去登录</router-link>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'login',
-  methods: {
-    goHome() {
-      this.$router.push('/welcome')
-    }
-  },
-  mounted() {
-    this.$request
-      .get('/login', { name: 'jack' }, { mock: true, loading: true })
-      .then((res) => {
-        console.log(res)
-      })
-  }
+  name: 'welcome'
 }
 </script>
 
-<style>
+<style scoped>
+.welcome {
+}
 </style>
