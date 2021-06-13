@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function gada (){
+      console.log('嘎达叫啊');
+    }
+    gada['hhe'] = nb => {
+      console.log('函数上面绑定函数');
+    }
+    console.dir(gada);
+    gada.hhe()
+  </script>
+</body>
+</html>
